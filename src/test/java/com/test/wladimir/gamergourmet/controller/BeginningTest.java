@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.test.wladimir.gamergourmet.controller;
 
 import com.test.wladimir.gamergourmet.model.Plate;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import org.junit.After;
 import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;

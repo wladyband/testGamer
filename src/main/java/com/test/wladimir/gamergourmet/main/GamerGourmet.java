@@ -30,12 +30,12 @@ public class GamerGourmet {
 
     private void start() {
 
-        final Beginning beginning = new Beginning("massa");
-        beginning.setInitialOptions("Lazanha", "Bolo de Chocolate");
-
         JFrame jframe = new JFrame("Jogo Gourmet");
         JLabel jlabel = new JLabel(REMEMBER_ONE_PLATE);
-        JButton jbuttonOk = new JButton("OK");
+        final Beginning beginning = new Beginning("massa");
+
+        beginning.setInitialOptions("Lazanha", "Bolo de Chocolate");
+        JButton jButtonOk = new JButton("OK");
 
         jframe.setSize(this.width, this.height);
         jframe.setLocationRelativeTo(null);
@@ -51,15 +51,15 @@ public class GamerGourmet {
         );
         jframe.add(jlabel);
 
-        jbuttonOk.setBounds(
+        jButtonOk.setBounds(
                 this.right_button,
                 this.height_button,
                 this.padding_button,
                 this.padding_height_button
         );
-        jframe.add(jbuttonOk);
+        jframe.add(jButtonOk);
 
-        jbuttonOk.addActionListener(new ActionListener() {
+        jButtonOk.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 beginning.question();

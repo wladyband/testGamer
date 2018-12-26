@@ -32,7 +32,7 @@
 							<dontWrapJar>false</dontWrapJar>
 							<errTitle>Error in launch4j plugin</errTitle>
 							<classPath>
-								<mainClass>br.com.test.wladimir.GamerGourmet</mainClass>
+								<mainClass>com.test.wladimir.gamergourmet.main.GamerGourmet</mainClass>
 							</classPath>
 							<jre>
                                 <minVersion>1.8.0</minVersion>

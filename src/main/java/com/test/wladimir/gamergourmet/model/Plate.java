@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.test.wladimir.gamergourmet.model;
 
-/**
- *
- * @author tecni
- */
-public class Plate {
-    
+
+public interface Plate {
+	String namePlate();
+        void question();
+	void questionLevel(String positiveAnswer, String negativeAnswer);
+        void positiveAnswer();
+	void negativeAnswer(Plate plate);
 }

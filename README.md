@@ -5,7 +5,7 @@
 ## 3. Alguns artefatos foram inseridos através do Maven. 
 
 
-### OBS( a classe principal para ser executada e essa logo abaixo)
+### OBS( A classe principal para ser executada e essa logo abaixo)
 
 `com.test.wladimir.gamergourmet.main`
 

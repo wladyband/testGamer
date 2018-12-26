@@ -31,14 +31,14 @@ public class Closure implements Plate {
 
     @Override
     public void positiveAnswer() {
-       JOptionPane.showMessageDialog(null, CONFIRMATION_TEXT);
+        JOptionPane.showMessageDialog(null, CONFIRMATION_TEXT);
     }
 
     @Override
     public void negativeAnswer(Plate plate) {
-       String plates = JOptionPane.showInputDialog(WHICH_DISH_DID_YOU_LIKE);
+        String plates = JOptionPane.showInputDialog(WHICH_DISH_DID_YOU_LIKE);
         String feature = JOptionPane.showInputDialog(
-        	String.format(COMPARED_DISHES, plates, plate.namePlate())
+                String.format(COMPARED_DISHES, plates, plate.namePlate())
         );
         plate.questionLevel(plates, feature);
     }

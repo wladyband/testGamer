@@ -12,50 +12,66 @@
     </properties>
     
     <build>
-		<plugins>
-			<plugin>
-				<groupId>com.akathist.maven.plugins.launch4j</groupId>
-				<artifactId>launch4j-maven-plugin</artifactId>
-				<version>1.7.22</version>
-				<executions>
-					<execution>
-						<id>l4j-gui</id>
-						<phase>package</phase>
-						<goals>
-							<goal>launch4j</goal>
-						</goals>
-						<configuration>
-							<headerType>gui</headerType>
-							<outfile>target/GamerGourmet.exe</outfile>
-							<jar>target/${project.artifactId}-${project.version}.jar</jar>
+        <plugins>
+            <plugin>
+                <groupId>com.akathist.maven.plugins.launch4j</groupId>
+                <artifactId>launch4j-maven-plugin</artifactId>
+                <version>1.7.22</version>
+                
+                <executions>
+                    <execution>
+                        <id>l4j-gui</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>launch4j</goal>
+                        </goals>
+                        <configuration>
+                            <headerType>gui</headerType>
+                            <outfile>target/GamerGourmet.exe</outfile>
+                            <jar>target/${project.artifactId}-${project.version}.jar</jar>
 							
-							<dontWrapJar>false</dontWrapJar>
-							<errTitle>Error in launch4j plugin</errTitle>
-							<classPath>
-								<mainClass>com.test.wladimir.gamergourmet.main.GamerGourmet</mainClass>
-							</classPath>
-							<jre>
+                            <dontWrapJar>false</dontWrapJar>
+                            <errTitle>Error in launch4j plugin</errTitle>
+                            <classPath>
+                                <mainClass>com.test.wladimir.gamergourmet.main.GamerGourmet</mainClass>
+                            </classPath>
+                            <jre>
                                 <minVersion>1.8.0</minVersion>
                                 <initialHeapSize>512</initialHeapSize>
                                 <maxHeapSize>1024</maxHeapSize>
                             </jre>
-							<versionInfo>
-								<fileVersion>0.0.0.1</fileVersion>
-								<txtFileVersion>0.0.0.1</txtFileVersion>
-								<fileDescription>des</fileDescription>
-								<copyright>Copyright (c) 2018 </copyright>
-								<companyName>comp</companyName>
-								<productVersion>0.0.0.1</productVersion>
-								<txtProductVersion>${project.version}</txtProductVersion>
-								<productName>GamerGourmet</productName>
-								<internalName>GamerGourmet</internalName>
-								<originalFilename>GamerGourmet.exe</originalFilename>
-							</versionInfo>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+                            <versionInfo>
+                                <fileVersion>0.0.0.1</fileVersion>
+                                <txtFileVersion>0.0.0.1</txtFileVersion>
+                                <fileDescription>des</fileDescription>
+                                <copyright>Copyright (c) 2018 </copyright>
+                                <companyName>comp</companyName>
+                                <productVersion>0.0.0.1</productVersion>
+                                <txtProductVersion>${project.version}</txtProductVersion>
+                                <productName>GamerGourmet</productName>
+                                <internalName>GamerGourmet</internalName>
+                                <originalFilename>GamerGourmet.exe</originalFilename>
+                            </versionInfo>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
     <name>GamerGourmet</name>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>2.15.0</version>
+            <scope>test</scope>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
 </project>

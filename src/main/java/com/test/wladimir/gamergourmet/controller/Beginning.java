@@ -30,7 +30,7 @@ public class Beginning implements Plate {
     @Override
     public void question() {
         String question = String.format(TEXT_OF_A_QUESTION, this.namePlate);
-        int answer = JOptionPane.showConfirmDialog(null, question, "Pergunta", JOptionPane.YES_NO_OPTION);
+        int answer = JOptionPane.showConfirmDialog(null, question, "Question", JOptionPane.YES_NO_OPTION);
 
         if (Integer.valueOf(answer).equals(JOptionPane.YES_OPTION)) {
             this.positive.positiveAnswer();

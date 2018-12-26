@@ -7,6 +7,6 @@
 
 ### OBS( A classe principal para ser executada e essa logo abaixo)
 
-`com.test.wladimir.gamergourmet.main`
+`com.test.wladimir.gamergourmet.main.GamerGourmet`
 
 ## 4. O projeto tem que ser executado através da IDE Netbeans.

@@ -9,4 +9,4 @@
 
 `com.test.wladimir.gamergourmet.main`
 
-## O projeto tem que ser executado através da IDE Netbeans.
+## 4. O projeto tem que ser executado através da IDE Netbeans.

@@ -1,5 +1,11 @@
 package com.test.wladimir.gamergourmet.main;
 
+
+/**
+ *
+ * @author Wladimir Alves Bandeira
+ */
+
 import com.test.wladimir.gamergourmet.controller.Beginning;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

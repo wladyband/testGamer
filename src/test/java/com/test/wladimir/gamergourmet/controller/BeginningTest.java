@@ -10,10 +10,6 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-/**
- *
- * @author tecni
- */
 @RunWith(MockitoJUnitRunner.Silent.class)
 public class BeginningTest {
 

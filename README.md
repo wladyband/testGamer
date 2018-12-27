@@ -12,4 +12,5 @@
 ## 4. O projeto tem que ser executado através da IDE Netbeans.
 
 ## 4. Esse é o nome do arquivo executável que se encontra na raiz do projeto.
-´GamerGourmet.RenomeieParaExe´
+`GamerGourmet.RenomeieParaExe`
+

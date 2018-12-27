@@ -20,9 +20,6 @@ public class BeginningTest {
     private static final String TEXT_OF_A_QUESTION = "O prato que você pensou é %s?";
     private static String namePlate = "torta";
 
-    private Plate positive;
-    private Plate negative;
-
     @Mock
     private Beginning beginningController;
 

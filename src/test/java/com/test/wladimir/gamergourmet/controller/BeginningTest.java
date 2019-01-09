@@ -1,7 +1,6 @@
 
 package com.test.wladimir.gamergourmet.controller;
 
-import com.test.wladimir.gamergourmet.model.Plate;
 import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.assertThat;
 import org.junit.Before;
@@ -9,6 +8,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import com.test.wladimir.gamergourmet.model.GameContract;
 
 @RunWith(MockitoJUnitRunner.Silent.class)
 public class BeginningTest {

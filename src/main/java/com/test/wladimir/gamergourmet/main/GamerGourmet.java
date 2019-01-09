@@ -1,11 +1,9 @@
 package com.test.wladimir.gamergourmet.main;
 
-
 /**
  *
  * @author Wladimir Alves Bandeira
  */
-
 import com.test.wladimir.gamergourmet.controller.Beginning;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -34,13 +32,17 @@ public class GamerGourmet {
         jogo.start();
     }
 
+    private Beginning initialize() {
+        final Beginning beginning = new Beginning("massa");
+        beginning.setInitialOptions("Lazanha", "Bolo de Chocolate");
+        return beginning;
+    }
+
     private void start() {
 
         JFrame jframe = new JFrame("Jogo Gourmet");
         JLabel jlabel = new JLabel(REMEMBER_ONE_PLATE);
-        final Beginning beginning = new Beginning("massa");
 
-        beginning.setInitialOptions("Lazanha", "Bolo de Chocolate");
         JButton jButtonOk = new JButton("OK");
 
         jframe.setSize(this.width, this.height);
@@ -65,6 +67,7 @@ public class GamerGourmet {
         );
         jframe.add(jButtonOk);
 
+        Beginning beginning = initialize(); 
         jButtonOk.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

@@ -1,15 +1,15 @@
 package com.test.wladimir.gamergourmet.controller;
 
-import com.test.wladimir.gamergourmet.model.Plate;
 import javax.swing.JOptionPane;
+import com.test.wladimir.gamergourmet.model.GameContract;
 
-public class Beginning implements Plate {
+public class Beginning implements GameContract {
 
     private static final String TEXT_OF_A_QUESTION = "O prato que você pensou é %s?";
 
     private String namePlate;
-    private Plate positive;
-    private Plate negative;
+    private GameContract positive;
+    private GameContract negative;
 
     public Beginning(String namePlate) {
         this.namePlate = namePlate;
@@ -42,7 +42,9 @@ public class Beginning implements Plate {
     @Override
     public void questionLevel(String positiveAnswer, String negativeAnswer) {
         this.positive = new Beginning(positiveAnswer);
+
         this.negative = new Beginning(this.namePlate);
+
         this.namePlate = negativeAnswer;
     }
 
@@ -52,7 +54,7 @@ public class Beginning implements Plate {
     }
 
     @Override
-    public void negativeAnswer(Plate plate) {
+    public void negativeAnswer(GameContract plate) {
         this.question();
     }
 

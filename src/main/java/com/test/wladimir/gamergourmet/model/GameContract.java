@@ -1,6 +1,6 @@
 package com.test.wladimir.gamergourmet.model;
 
-public interface Plate {
+public interface GameContract {
 
     String namePlate();
 
@@ -10,5 +10,5 @@ public interface Plate {
 
     void positiveAnswer();
 
-    void negativeAnswer(Plate plate);
+    void negativeAnswer(GameContract plate);
 }

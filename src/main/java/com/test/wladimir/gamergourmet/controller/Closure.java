@@ -1,9 +1,9 @@
 package com.test.wladimir.gamergourmet.controller;
 
-import com.test.wladimir.gamergourmet.model.Plate;
 import javax.swing.JOptionPane;
+import com.test.wladimir.gamergourmet.model.GameContract;
 
-public class Closure implements Plate {
+public class Closure implements GameContract {
 
     private static final String COMPARED_DISHES = "%s é ________ mas %s não.";
     private static final String WHICH_DISH_DID_YOU_LIKE = "Qual prato você pensou?";
@@ -30,7 +30,7 @@ public class Closure implements Plate {
     }
 
     @Override
-    public void negativeAnswer(Plate plate) {
+    public void negativeAnswer(GameContract plate) {
         String plates = JOptionPane.showInputDialog(WHICH_DISH_DID_YOU_LIKE);
         String feature = JOptionPane.showInputDialog(
                 String.format(COMPARED_DISHES, plates, plate.namePlate())

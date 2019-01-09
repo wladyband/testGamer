@@ -68,6 +68,7 @@ public class GamerGourmet {
         jframe.add(jButtonOk);
 
         Beginning beginning = initialize(); 
+        
         jButtonOk.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
